@@ -21,7 +21,7 @@
 body {
   display: grid;
   justify-items: center;
-  grid-template-columns: auto 1440px auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: repeat(6, auto);
   background-color: #101010;
   font-family: Helvetica-Now-Display;
@@ -65,7 +65,7 @@ header {
 }
 
 .header-box {
-  width: 1160px;
+  max-width: 1160px;
   height: 112px;
   display: flex;
   justify-content: space-between;
@@ -94,12 +94,27 @@ header .header-box nav ul li {
 
 header .header-box nav ul li a {
   color: var(--Navbar-and-hs-cokor);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+header .header-box nav ul li a:hover {
+  opacity: 0.6;
 }
 
 header .header-box .box-for-logoAndNavbar nav ul li .arrow {
   margin-left: 6px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+header .header-box .box-for-logoAndNavbar nav ul li .arrow:hover {
+  opacity: 0.6;
 }
 
 header .header-box .box-for-btnSearchAndPerson {
@@ -107,7 +122,7 @@ header .header-box .box-for-btnSearchAndPerson {
 }
 
 header .header-box .box-for-btnSearchAndPerson button {
-  width: 193px;
+  max-width: 193px;
   height: 52px;
   border-radius: 8px;
   border: none;
@@ -116,6 +131,13 @@ header .header-box .box-for-btnSearchAndPerson button {
   font-size: 20px;
   background-color: var(--btn-Color);
   color: var(--navBackground-footerbackground-text-color);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+header .header-box .box-for-btnSearchAndPerson button:hover {
+  opacity: 0.6;
 }
 
 header .header-box .box-for-btnSearchAndPerson div {
@@ -125,7 +147,15 @@ header .header-box .box-for-btnSearchAndPerson div {
   background-color: var(--nav-search-person-color);
   display: flex;
   align-items: center;
+  cursor: pointer;
   justify-content: center;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+header .header-box .box-for-btnSearchAndPerson div:hover {
+  opacity: 0.6;
 }
 
 header .header-box .box-for-btnSearchAndPerson .search {
@@ -138,7 +168,7 @@ header .header-box .box-for-btnSearchAndPerson .person {
 /*header end*/
 
 .banner {
-  width: 1440px;
+  max-width: 1440px;
   height: 796px;
 }
 
@@ -150,7 +180,7 @@ header .header-box .box-for-btnSearchAndPerson .person {
 /*main start*/
 
 main .main-box {
-  width: 1160px;
+  max-width: 1160px;
   height: 554px;
   margin-top: 80px;
   display: flex;
@@ -160,7 +190,7 @@ main .main-box {
 }
 
 .main-box .main-header {
-  width: 1160px;
+  max-width: 1160px;
   display: flex;
   justify-content: space-between;
 }
@@ -180,7 +210,18 @@ main .main-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
 }
+.box-for-rightContent .rightContent-div1:hover,
+.rightContent-div2:hover,
+.rightContent-div3:hover {
+  opacity: 0.6;
+}
+
 .rightContent-div1 {
   width: 70px;
   height: 32px;
@@ -201,7 +242,7 @@ main .main-box {
 }
 
 main .section1 {
-  width: 1160px;
+  max-width: 1160px;
   display: flex;
   justify-content: space-between;
 }
@@ -216,6 +257,13 @@ main .main-box button {
   font-weight: bold;
   background-color: var(--btn-Color);
   color: var(--navBackground-footerbackground-text-color);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+main .main-box button:hover {
+  opacity: 0.6;
 }
 
 /*main end*/
@@ -223,7 +271,7 @@ main .main-box button {
 /* section2 start*/
 
 .info-box {
-  width: 1160px;
+  max-width: 1160px;
   height: 632px;
   margin-top: 112px;
   display: flex;
@@ -242,7 +290,7 @@ main .main-box button {
 }
 
 .info-box h2 {
-  width: 460px;
+  max-width: 460px;
   height: 72px;
   margin-bottom: 40px;
   font-size: 48px;
@@ -255,7 +303,7 @@ main .main-box button {
 }
 
 .Notícias1 {
-  width: 860px;
+  max-width: 860px;
   height: 136px;
   background-color: var(--navBackground-footerbackground-text-color);
   border-bottom-left-radius: 16px;
@@ -263,12 +311,12 @@ main .main-box button {
 }
 
 .Notícias1-txt {
-  width: 625px;
+  max-width: 625px;
   height: 132px;
 }
 
 .Notícias1 h3 {
-  width: 585px;
+  max-width: 585px;
   height: 48px;
   margin: 20px 0px 0px 20px;
   display: flex;
@@ -277,10 +325,18 @@ main .main-box button {
   color: var(--Navbar-and-hs-cokor);
   font-size: 32px;
   font-weight: 600;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.Notícias1 h3:hover {
+  opacity: 0.6;
 }
 
 .Notícias1 div {
-  width: 329px;
+  max-width: 329px;
   height: 76px;
   margin-top: 20px;
 }
@@ -298,7 +354,7 @@ main .main-box button {
 }
 
 .small-card2 {
-  width: 250px;
+  max-width: 250px;
   height: 224px;
   margin-bottom: 40px;
   display: flex;
@@ -310,7 +366,7 @@ main .main-box button {
 }
 
 .Notícias2 {
-  width: 260px;
+  max-width: 260px;
   height: 82px;
   background-color: var(--navBackground-footerbackground-text-color);
   border-bottom-left-radius: 16px;
@@ -328,6 +384,14 @@ main .main-box button {
   font-size: 13px;
   line-height: 150%;
   font-weight: 600;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.Notícias2 h3:hover {
+  opacity: 0.6;
 }
 
 .Notícias2 div {
@@ -374,6 +438,14 @@ main .main-box button {
   font-size: 13px;
   line-height: 150%;
   font-weight: 600;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.Notícias3 h3:hover {
+  opacity: 0.6;
 }
 
 .Notícias3 div {
@@ -394,7 +466,7 @@ main .main-box button {
 /* games launcher start */
 
 .games-Launcher {
-  width: 1160px;
+  max-width: 1160px;
   height: 535px;
   margin-top: 80px;
   background-image: url("../img/fundo.svg");
@@ -440,6 +512,17 @@ main .main-box button {
   font-weight: 800;
   background-color: var(--btn-Color);
   box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.32);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.game-launcher-content button:hover {
+  opacity: 0.6;
+}
+
+.game-launcher-content button a {
+  color: var(--navBackground-footerbackground-text-color);
 }
 
 .img-box4 {
@@ -461,7 +544,7 @@ footer {
 }
 
 footer .footer-box {
-  width: 1160px;
+  max-width: 1160px;
   height: 238px;
   background-color: var(--navBackground-footerbackground-text-color);
   display: flex;
@@ -482,6 +565,13 @@ footer .footer-box ul {
 footer .footer-box ul li a {
   margin-right: 24px;
   color: var(--footer-Nav-Color);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+footer .footer-box ul li a:hover {
+  opacity: 0.6;
 }
 
 .ul-span-box {
@@ -498,11 +588,13 @@ footer .footer-box span {
   font-size: 13px;
 }
 
+.footer-nav ul li a {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.footer-nav ul li a:hover {
+  opacity: 0.6;
+}
 /* footer start */
-
-
-/* animation start*/
-
-anima
-
-/* animation end*/
