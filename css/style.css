@@ -21,7 +21,7 @@
 body {
   display: grid;
   justify-items: center;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto 1440px auto;
   grid-template-rows: repeat(6, auto);
   background-color: #101010;
   font-family: Helvetica-Now-Display;
@@ -65,7 +65,7 @@ header {
 }
 
 .header-box {
-  max-width: 1160px;
+  width: 1160px;
   height: 112px;
   display: flex;
   justify-content: space-between;
@@ -122,7 +122,7 @@ header .header-box .box-for-btnSearchAndPerson {
 }
 
 header .header-box .box-for-btnSearchAndPerson button {
-  max-width: 193px;
+  width: 193px;
   height: 52px;
   border-radius: 8px;
   border: none;
@@ -173,7 +173,7 @@ header .header-box .box-for-btnSearchAndPerson .person {
 }
 
 .banner img {
-  width: 1440px;
+  max-width: 1440px;
   height: 796px;
 }
 
@@ -190,7 +190,7 @@ main .main-box {
 }
 
 .main-box .main-header {
-  max-width: 1160px;
+  width: 1160px;
   display: flex;
   justify-content: space-between;
 }
@@ -242,7 +242,7 @@ main .main-box {
 }
 
 main .section1 {
-  max-width: 1160px;
+  width: 1160px;
   display: flex;
   justify-content: space-between;
 }
@@ -303,7 +303,7 @@ main .main-box button:hover {
 }
 
 .Notícias1 {
-  max-width: 860px;
+  width: 860px;
   height: 136px;
   background-color: var(--navBackground-footerbackground-text-color);
   border-bottom-left-radius: 16px;
@@ -311,12 +311,12 @@ main .main-box button:hover {
 }
 
 .Notícias1-txt {
-  max-width: 625px;
+  width: 625px;
   height: 132px;
 }
 
 .Notícias1 h3 {
-  max-width: 585px;
+  width: 585px;
   height: 48px;
   margin: 20px 0px 0px 20px;
   display: flex;
@@ -336,7 +336,7 @@ main .main-box button:hover {
 }
 
 .Notícias1 div {
-  max-width: 329px;
+  width: 329px;
   height: 76px;
   margin-top: 20px;
 }
@@ -354,7 +354,7 @@ main .main-box button:hover {
 }
 
 .small-card2 {
-  max-width: 250px;
+  width: 250px;
   height: 224px;
   margin-bottom: 40px;
   display: flex;
@@ -366,7 +366,7 @@ main .main-box button:hover {
 }
 
 .Notícias2 {
-  max-width: 260px;
+  width: 260px;
   height: 82px;
   background-color: var(--navBackground-footerbackground-text-color);
   border-bottom-left-radius: 16px;
@@ -544,7 +544,7 @@ footer {
 }
 
 footer .footer-box {
-  max-width: 1160px;
+  width: 1160px;
   height: 238px;
   background-color: var(--navBackground-footerbackground-text-color);
   display: flex;
